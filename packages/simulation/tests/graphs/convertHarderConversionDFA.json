@@ -1,0 +1,136 @@
+{
+  "projectType": "FSA",
+  "_id": "14027c64-78eb-4a90-b66d-d2ea76a3ede9",
+  "states": [
+    {
+      "id": 0,
+      "modeID": 0,
+      "label": "0, 1",
+      "x": 195,
+      "y": 375,
+      "isFinal": false,
+      "mode": "task"
+    },
+    {
+      "id": 1,
+      "modeID": 1,
+      "label": "1",
+      "x": 195,
+      "y": 375,
+      "isFinal": false,
+      "mode": "task"
+    },
+    {
+      "id": 2,
+      "modeID": 2,
+      "label": "2",
+      "x": 195,
+      "y": 375,
+      "isFinal": true,
+      "mode": "task"
+    },
+    {
+      "id": 3,
+      "modeID": 3,
+      "label": "Trap",
+      "x": 195,
+      "y": 375,
+      "isFinal": false,
+      "mode": "task"
+    },
+    {
+      "id": 4,
+      "modeID": 4,
+      "label": "2, 3",
+      "x": 195,
+      "y": 375,
+      "isFinal": true,
+      "mode": "task"
+    }
+  ],
+  "transitions": [
+    {
+      "id": 0,
+      "from": 0,
+      "to": 4,
+      "read": "A"
+    },
+    {
+      "id": 1,
+      "from": 0,
+      "to": 1,
+      "read": "B"
+    },
+    {
+      "id": 2,
+      "from": 1,
+      "to": 2,
+      "read": "A"
+    },
+    {
+      "id": 3,
+      "from": 1,
+      "to": 1,
+      "read": "B"
+    },
+    {
+      "id": 4,
+      "from": 2,
+      "to": 3,
+      "read": "A"
+    },
+    {
+      "id": 5,
+      "from": 2,
+      "to": 3,
+      "read": "B"
+    },
+    {
+      "id": 6,
+      "from": 3,
+      "to": 3,
+      "read": "A"
+    },
+    {
+      "id": 7,
+      "from": 3,
+      "to": 3,
+      "read": "B"
+    },
+    {
+      "id": 8,
+      "from": 4,
+      "to": 3,
+      "read": "A"
+    },
+    {
+      "id": 9,
+      "from": 4,
+      "to": 3,
+      "read": "B"
+    }
+  ],
+  "comments": [],
+  "simResult": [],
+  "tests": {
+    "single": "",
+    "batch": [
+      ""
+    ]
+  },
+  "initialState": 0,
+  "meta": {
+    "name": "convertHarderConversionDFA",
+    "dateCreated": 1682044927890,
+    "dateEdited": 1682044927890,
+    "version": "1.0.0",
+    "automatariumVersion": "1.0.0"
+  },
+  "config": {
+    "type": "FSA",
+    "statePrefix": "q",
+    "acceptanceCriteria": "both",
+    "color": "orange",
+    "orOperator": "|"
+  }
+}

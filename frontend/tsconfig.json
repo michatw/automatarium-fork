@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "target": "ES2021",
+    "paths": {
+      "/src/*": ["./src/*"]
+    },
+    "types": ["@types/lodash"],
+    "lib": ["DOM", "ES2021", "dom.iterable"],
+    "outDir": "dist/"
+  },
+  "include": [
+    "src/**/*",
+    "global.d.ts"
+  ]
+}

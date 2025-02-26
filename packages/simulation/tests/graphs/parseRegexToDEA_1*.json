@@ -1,0 +1,19 @@
+{
+    "states": [
+        { "id": 0, "modeID": 0, "name": "2,0,3", "x": 0, "y": 400, "isFinal": true, "mode": "task" },
+        {
+            "id": 1,
+            "modeID": 1,
+            "name": "1,0,3",
+            "x": 100,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        }
+    ],
+    "transitions": [
+        { "from": 0, "to": 1, "read": "1", "id": 0, "mode": "task" },
+        { "from": 1, "to": 1, "read": "1", "id": 1, "mode": "task" }
+    ],
+    "initialState": 0
+}

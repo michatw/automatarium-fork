@@ -1,0 +1,76 @@
+{
+  "projectType": "FSA",
+  "_id": "c53a7961-03b5-4f51-a4a4-e905f433503c",
+  "states": [
+    {
+      "id": 0,
+      "modeID": 0,
+      "mode": "task",
+      "label": "0, 1",
+      "x": 225,
+      "y": 375,
+      "isFinal": false
+    },
+    {
+      "id": 1,
+      "mode": "task",
+      "modeID": 1,
+      "label": "2, 3",
+      "x": 225,
+      "y": 375,
+      "isFinal": true
+    },
+    {
+      "id": 2,
+      "mode": "task",
+      "modeID": 2,
+      "label": "Trap",
+      "x": 225,
+      "y": 375,
+      "isFinal": false
+    }
+  ],
+  "transitions": [
+    {
+      "id": 0,
+      "from": 0,
+      "to": 1,
+      "read": "A"
+    },
+    {
+      "id": 1,
+      "from": 1,
+      "to": 2,
+      "read": "A"
+    },
+    {
+      "id": 2,
+      "from": 2,
+      "to": 2,
+      "read": "A"
+    }
+  ],
+  "comments": [],
+  "simResult": [],
+  "tests": {
+    "single": "",
+    "batch": [
+      ""
+    ]
+  },
+  "initialState": 0,
+  "meta": {
+    "name": "convertSimpleConversionDFA",
+    "dateCreated": 1682044927890,
+    "dateEdited": 1682044927890,
+    "version": "1.0.0",
+    "automatariumVersion": "1.0.0"
+  },
+  "config": {
+    "type": "FSA",
+    "statePrefix": "q",
+    "acceptanceCriteria": "both",
+    "color": "orange",
+    "orOperator": "|"
+  }
+}

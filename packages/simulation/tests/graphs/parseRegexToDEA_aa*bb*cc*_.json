@@ -1,0 +1,39 @@
+{
+    "states": [
+        {"id": 0, "modeID": 0, "name": "0", "x": 0, "y": 400, "isFinal": false, "mode": "task"},
+        {"id": 1, "modeID": 1, "name": "1,4,2,5,6", "x": 100, "y": 400, "isFinal": false, "mode": "task"},
+        {"id": 2, "modeID": 2, "name": "3,2,5,6", "x": 200, "y": 400, "isFinal": false, "mode": "task"},
+        {"id": 3, "modeID": 3, "name": "7,10,8,11,12", "x": 300, "y": 400, "isFinal": false, "mode": "task"},
+        {"id": 4, "modeID": 4, "name": "9,8,11,12", "x": 400, "y": 400, "isFinal": false, "mode": "task"},
+        {"id": 5, "modeID": 5, "name": "13,16,14,17", "x": 500, "y": 400, "isFinal": true, "mode": "task"},
+        {"id": 6, "modeID": 6, "name": "15,14,17", "x": 600, "y": 400, "isFinal": true, "mode": "task"},
+        {"id": 7, "modeID": 7, "x": 0, "y": 500, "isFinal": false, "mode": "task", "name": "Trap"}
+    ],
+    "transitions": [
+        {"from": 0, "to": 1, "read": "a", "id": 0, "mode": "task"},
+        {"from": 1, "to": 2, "read": "a", "id": 1, "mode": "task"},
+        {"from": 2, "to": 2, "read": "a", "id": 2, "mode": "task"},
+        {"from": 2, "to": 3, "read": "b", "id": 3, "mode": "task"},
+        {"from": 3, "to": 4, "read": "b", "id": 4, "mode": "task"},
+        {"from": 4, "to": 4, "read": "b", "id": 5, "mode": "task"},
+        {"from": 4, "to": 5, "read": "c", "id": 6, "mode": "task"},
+        {"from": 5, "to": 6, "read": "c", "id": 7, "mode": "task"},
+        {"from": 6, "to": 6, "read": "c", "id": 8, "mode": "task"},
+        {"from": 3, "to": 5, "read": "c", "id": 9, "mode": "task"},
+        {"from": 1, "to": 3, "read": "b", "id": 10, "mode": "task"},
+        {"from": 0, "to": 7, "read": "b", "id": 11, "mode": "task"},
+        {"from": 7, "to": 7, "read": "b", "id": 12, "mode": "task"},
+        {"from": 0, "to": 7, "read": "c", "id": 13, "mode": "task"},
+        {"from": 7, "to": 7, "read": "c", "id": 14, "mode": "task"},
+        {"from": 1, "to": 7, "read": "c", "id": 15, "mode": "task"},
+        {"from": 2, "to": 7, "read": "c", "id": 16, "mode": "task"},
+        {"from": 3, "to": 7, "read": "a", "id": 17, "mode": "task"},
+        {"from": 7, "to": 7, "read": "a", "id": 18, "mode": "task"},
+        {"from": 4, "to": 7, "read": "a", "id": 19, "mode": "task"},
+        {"from": 5, "to": 7, "read": "a", "id": 20, "mode": "task"},
+        {"from": 5, "to": 7, "read": "b", "id": 21, "mode": "task"},
+        {"from": 6, "to": 7, "read": "a", "id": 22, "mode": "task"},
+        {"from": 6, "to": 7, "read": "b", "id": 23, "mode": "task"}
+    ],
+    "initialState": 0
+}

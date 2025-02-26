@@ -1,0 +1,217 @@
+{
+    "states": [
+        {
+            "id": 0,
+            "modeID": 0,
+            "name": "12,8,0,6,2,4,13",
+            "x": 0,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 1,
+            "modeID": 1,
+            "name": "1,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 100,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 2,
+            "modeID": 2,
+            "name": "1,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 200,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 3,
+            "modeID": 3,
+            "name": "3,7,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 300,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 4,
+            "modeID": 4,
+            "name": "5,7,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 400,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 5,
+            "modeID": 5,
+            "name": "3,7,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 500,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        },
+        {
+            "id": 6,
+            "modeID": 6,
+            "name": "5,7,9,8,0,6,2,4,11,8,0,6,2,4,13",
+            "x": 600,
+            "y": 400,
+            "isFinal": true,
+            "mode": "task"
+        }
+    ],
+    "transitions": [
+        {
+            "from": 0,
+            "to": 1,
+            "read": "a",
+            "id": 0,
+            "mode": "task"
+        },
+        {
+            "from": 1,
+            "to": 2,
+            "read": "a",
+            "id": 1,
+            "mode": "task"
+        },
+        {
+            "from": 2,
+            "to": 2,
+            "read": "a",
+            "id": 2,
+            "mode": "task"
+        },
+        {
+            "from": 2,
+            "to": 3,
+            "read": "b",
+            "id": 3,
+            "mode": "task"
+        },
+        {
+            "from": 3,
+            "to": 2,
+            "read": "a",
+            "id": 4,
+            "mode": "task"
+        },
+        {
+            "from": 3,
+            "to": 3,
+            "read": "b",
+            "id": 5,
+            "mode": "task"
+        },
+        {
+            "from": 3,
+            "to": 4,
+            "read": "c",
+            "id": 6,
+            "mode": "task"
+        },
+        {
+            "from": 4,
+            "to": 2,
+            "read": "a",
+            "id": 7,
+            "mode": "task"
+        },
+        {
+            "from": 4,
+            "to": 3,
+            "read": "b",
+            "id": 8,
+            "mode": "task"
+        },
+        {
+            "from": 4,
+            "to": 4,
+            "read": "c",
+            "id": 9,
+            "mode": "task"
+        },
+        {
+            "from": 2,
+            "to": 4,
+            "read": "c",
+            "id": 10,
+            "mode": "task"
+        },
+        {
+            "from": 1,
+            "to": 3,
+            "read": "b",
+            "id": 11,
+            "mode": "task"
+        },
+        {
+            "from": 1,
+            "to": 4,
+            "read": "c",
+            "id": 12,
+            "mode": "task"
+        },
+        {
+            "from": 0,
+            "to": 5,
+            "read": "b",
+            "id": 13,
+            "mode": "task"
+        },
+        {
+            "from": 5,
+            "to": 2,
+            "read": "a",
+            "id": 14,
+            "mode": "task"
+        },
+        {
+            "from": 5,
+            "to": 5,
+            "read": "b",
+            "id": 15,
+            "mode": "task"
+        },
+        {
+            "from": 5,
+            "to": 4,
+            "read": "c",
+            "id": 16,
+            "mode": "task"
+        },
+        {
+            "from": 0,
+            "to": 6,
+            "read": "c",
+            "id": 17,
+            "mode": "task"
+        },
+        {
+            "from": 6,
+            "to": 2,
+            "read": "a",
+            "id": 18,
+            "mode": "task"
+        },
+        {
+            "from": 6,
+            "to": 5,
+            "read": "b",
+            "id": 19,
+            "mode": "task"
+        },
+        {
+            "from": 6,
+            "to": 6,
+            "read": "c",
+            "id": 20,
+            "mode": "task"
+        }
+    ],
+    "initialState": 0
+}

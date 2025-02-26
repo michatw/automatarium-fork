@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "lib": ["ESNext", "dom"],
+    "types": ["node", "jest"],
+    "target": "ES6",
+    "outDir": "dist/"
+  }
+}

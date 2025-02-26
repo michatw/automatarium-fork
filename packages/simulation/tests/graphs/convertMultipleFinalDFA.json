@@ -1,0 +1,76 @@
+{
+  "projectType": "FSA",
+  "_id": "399676d0-a3cc-4ef6-8b49-78fb2a32e5fd",
+  "states": [
+    {
+      "id": 0,
+      "modeID": 0,
+      "label": "0, 1",
+      "x": 225,
+      "y": 375,
+      "isFinal": true,
+      "mode": "task"
+    },
+    {
+      "id": 1,
+      "modeID": 1,
+      "label": "2, 3",
+      "x": 225,
+      "y": 375,
+      "isFinal": true,
+      "mode": "task"
+    },
+    {
+      "id": 2,
+      "modeID": 2,
+      "label": "Trap",
+      "x": 225,
+      "y": 375,
+      "isFinal": false,
+      "mode": "task"
+    }
+  ],
+  "transitions": [
+    {
+      "id": 0,
+      "from": 0,
+      "to": 1,
+      "read": "A"
+    },
+    {
+      "id": 1,
+      "from": 1,
+      "to": 2,
+      "read": "A"
+    },
+    {
+      "id": 2,
+      "from": 2,
+      "to": 2,
+      "read": "A"
+    }
+  ],
+  "comments": [],
+  "simResult": [],
+  "tests": {
+    "single": "",
+    "batch": [
+      ""
+    ]
+  },
+  "initialState": 0,
+  "meta": {
+    "name": "convertMultipleFinalDFA",
+    "dateCreated": 1682044927890,
+    "dateEdited": 1682044927890,
+    "version": "1.0.0",
+    "automatariumVersion": "1.0.0"
+  },
+  "config": {
+    "type": "FSA",
+    "statePrefix": "q",
+    "acceptanceCriteria": "both",
+    "color": "orange",
+    "orOperator": "|"
+  }
+}
